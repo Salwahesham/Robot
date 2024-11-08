@@ -1,0 +1,821 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 0;
+    margin-top: -15px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 1px;
+    font-size: 1.2rem;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    background-color: #ffd700;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.image-left, .image-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.image-left img, .image-right img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 40px;
+}
+
+.text {
+    width: 100%;
+    z-index: 2;
+    margin-left: -100px;
+}
+
+.text h3 {
+    font-size: 1rem;
+    color: #808080;
+}
+
+.text h1 {
+    font-size: 3rem;
+    color: #000;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1ABC9C;
+    color: #0c0c0c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* استعلامات الوسائط */
+@media (max-width: 1024px) {
+
+    .image-left img, .image-right img {
+        max-width: 100%;
+        height: auto;
+    }
+    .image-left, .image-right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text h1 {
+        font-size: 1rem;
+    }
+    .text p {
+        font-size: .5rem;
+    }
+    .text {
+        margin-left: -30px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #1ABC9C;
+        color: #0c0c0c;
+        padding: 10px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-size: .5rem;
+        font-weight: bold;
+    }
+    .logo {
+        font-size: .7rem;
+        font-weight: bold;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px 0;
+    }
+    .nav-links li {
+        margin-left: 10px;
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: #000;
+        padding: 12px 8px;
+        border-radius: 1px;
+        font-size: .5rem;
+    }
+
+}
+
+/* ////////////////////////////هنا السكشن التاني ///////////////////////////////// */
+
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    margin-top: -46px;
+}
+
+.section-2 .s2 .img1 img {
+    max-width: 75%;
+    height: auto;
+    margin: 40px 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.section-2 .s2 .img1 {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 52%;
+    background-image: url(../imags/222.jpg);
+    margin-left: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.content .s2 .text-s2 {
+    width: 70%;
+    margin-left: 170px;
+    margin-top: 280px;
+}
+
+.section-2 .s2 .image-left2-s2 {
+    width: 270px;
+    height: 390px;
+    margin-left: -190px;
+    background-color: #02fae5;
+    background-image: url(../imags/2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -150px;
+}
+
+/* استعلامات الوسائط لجعل التصميم متجاوب */
+@media (max-width: 1024px) {
+    .content .s2 .text-s2 {
+        width: 100%;
+        margin-left: 90px;
+        margin-top: 200px;
+    }
+    .section-2 .s2 .img1 img {
+        max-width: 50%;
+        margin: 30px 50px;
+    }
+    .section-2 .s2 .image-left2-s2 {
+        width: 100px;
+        height: 300px;
+        margin-left: -110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .s2 .text-s2 {
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 150px;
+        text-align: left;
+        font-size: 18px;
+    }
+    .section-2 .s2 .img1 {
+        margin-left: 10px;
+    }
+    .section-2 .s2 .img1 img {
+        max-width: 80%;
+        margin: 20px 30px;
+    }
+    .section-2 .s2 .image-left2-s2 {
+        width: 150px;
+        height: 200px;
+        margin-left: -110px;
+        margin-top: -100px;
+    }
+}
+
+
+
+/* /////////////////////////////////هنا السكشن الثالث/////////////////////// */
+
+.section-2 .s3 .img1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: -60px;
+    margin-left: 70px;
+}
+
+.section-2 .s3 .img1 {
+    width: 350px;
+    height: 350px;
+    background-color: #02fae5;
+    margin-left: 150px;
+    border-radius: 50%;
+    background-image: url(../imags/222.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+}
+
+.content .s3 .text-s3 {
+    width: 60%;
+    margin-left: 50px;
+}
+
+/*   لجعل التصميم متجاوب */
+
+
+@media (max-width: 768px) {
+    .section-2 .s3 .img1 {
+        width: 200px;
+        height: 200px;
+        margin-left: 10px;
+        margin-top: -100px;
+    }
+    .section-2 .s3 .img1 img {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .content .s3 .text-s3 {
+        width: 100%;
+        margin-left: 20px;
+        text-align: left;
+        margin-top: -110px;
+       
+    }
+}
+
+
+
+
+/* //////////////////////////هنا الشكسن الرابع//////////////////////// */
+
+.section-2 .div-item-lest {
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* يسمح بلف العناصر في حال ضيق الشاشة */
+}
+
+.section-2 .div-item-lest .item-1 {
+    width: 23%;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    color: #6d6767;
+}
+
+.section-2 .div-item-lest .item-1 .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #02fae5;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.section-2 .div-item-lest .item-1 .icon .fa-solid {
+    font-size: 70px;
+    color: #fff;
+}
+
+.section-2 .div-item-lest .item-1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+    color: #070707;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section-2 .div-item-lest .item-1 p {
+    color: #5a5951;
+    font-weight: bold;
+}
+
+/*   لجعل التصميم متجاوب */
+@media (max-width: 1024px) {
+    .section-2 .div-item-lest {
+        justify-content: center;
+    }
+    .section-2 .div-item-lest .item-1 {
+        width: 30%;
+        margin: 10px;
+    }
+    .section-2 .div-item-lest .item-1 .icon {
+        width: 180px;
+        height: 180px;
+    }
+    .section-2 .div-item-lest .item-1 .icon .fa-solid {
+        font-size: 60px;
+    }
+    .section-2 .div-item-lest .item-1 h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .section-2 .div-item-lest .item-1 p {
+        color: #3a3a37;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-2 .div-item-lest .item-1 {
+        width: 100%;
+        margin: 15px 0;
+        
+    }
+    .section-2 .div-item-lest .item-1 .icon {
+        width: 160px;
+        height: 160px;
+       
+    }
+    .section-2 .div-item-lest .item-1 .icon .fa-solid {
+        font-size: 50px;
+        
+    }
+    .section-2 .div-item-lest .item-1 h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+/* ////////////////هنا السكشن الخامس////// ////////////////////// */
+.section-2 .s4 .img1 img {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 80px;
+}
+
+.section-2 .s4 .img1 {
+    width: 390px;
+    height: 390px;
+    margin-left: 70px;
+    border-radius: 50%;
+    background-image: url(../imags/bg.jpg);
+    background-size: cover;
+    margin-bottom: 250px;
+}
+
+.section-2 .s4 .img1 .image-left2-s4 img {
+    width: 200px;
+    margin-left: -180px;
+    margin-top: -50px;
+    background-image: url(../imags/Untitled8.jpg);
+}
+
+.section-2 .s4 .img1 .image-right2-s4 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 140px;
+    margin-top: -10px;
+    margin-bottom: -150px;
+    background-color: #02fae5;
+}
+
+/*   لجعل التصميم متجاوب */
+@media (max-width: 1024px) {
+    .section-2 .s4 .img1 {
+        width: 200px;
+        height: 200px;
+        margin-left: 100px;
+        margin-bottom: 80px;
+    }
+    .section-2 .s4 .img1 img {
+        width: 80%;
+        height: 80%;
+        margin-left: 50px;
+    }
+    .section-2 .s4 .img1 .image-left2-s4 img {
+        width: 120px;
+        margin-left: -130px;
+        margin-top: 20px;
+    }
+    .section-2 .s4 .img1 .image-right2-s4 img {
+        width: 10px;
+        height: 10px;
+        margin-left: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-2 .s4 .img1 {
+        width: 150px;
+        height: 160px;
+        margin-left: -25px;
+        margin-bottom: 8px;
+    }
+    .section-2 .s4 .img1 img {
+        width: 75%;
+        height: 75%;
+        margin-left: 40px;
+    }
+    .section-2 .s4 .img1 .image-left2-s4 img {
+        width: 50px;
+        margin-left: -170px;
+        margin-top: 30px;
+    }
+
+  
+}
+
+
+
+
+/* ////////////////////////////////اخر سكشن قبل الفوتر ////////////////////////// */
+.container_11 {
+    display: flex;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h3 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.3; /* لتحسين قابلية القراءة */
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-content a {
+    display: inline-block;
+    background-color: #1ABC9C;
+    color: #0c0c0c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.text-content a:hover {
+    background-color: #16a085;
+}
+
+.image-content {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.robot-image {
+    max-width: 90%;
+    border-radius: 50%;
+    margin-bottom: 80px;
+}
+
+.circle-image {
+    position: absolute;
+    bottom: 40px; /* لضبط موضع الدائرة أسفل الصورة الرئيسية */
+    left: 25%;
+    transform: translateX(-50%); /* لتوسيط الدائرة أفقياً */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/*   لجعل التصميم متجاوب */
+@media (max-width: 1024px) {
+    .text-content h1 {
+        font-size: 2rem;
+    }
+    .text-content h3 {
+        font-size: 1rem;
+    }
+    .text-content p,
+    .text-content a {
+        font-size: 0.80rem;
+    }
+    .robot-image {
+        max-width: 100%;
+    }
+    .circle-image {
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_11 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .text-content {
+        text-align: left;
+        padding: 20px;
+        margin-left: 20px;
+    }
+    .text-content h1 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .text-content h3 {
+        font-size: 1.5rem;
+    }
+    .text-content p,
+    .text-content a {
+        font-size: .5rem;
+    }
+    .robot-image {
+        max-width: 100%;
+    }
+    .circle-image {
+        width: 100px;
+        height: 100px;
+        bottom: 30px;
+    }
+}
+
+
+
+
+/* ////////////////////سكشن الفوتر /// */
+
+
+
+.section-1 {
+    background-color: #00ffff;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+
+.section-1 div {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    vertical-align: top;
+    padding: 22px;
+}
+
+.section-1 div h3 {
+    color: #070707;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-1 div p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* تنسيق القسم الثاني */
+.section-2s {
+    width: 100%;
+    background-image: url('../imags/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background-color: #02fae5;
+}
+
+.contents {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.yellow-line {
+    width: 20%;
+    height: 5px;
+    background-color: #ffd700;
+    margin-right: 20px; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.texts {
+    max-width: 600px;
+}
+
+.section-2s .texts {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-right: 20px; 
+    color: #fafaf9;
+}
+
+.texts p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+/* تنسيق القسم الثالث */
+.section-3 {
+    width: 100%;
+    height: 45vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-3 h2 {
+    font-size: 2rem;
+    margin-top: 65px;
+}
+
+.section-3 .social-icons {
+    margin: 20px 0;
+}
+
+.section-3 .social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.section-3 .social-icons i:hover {
+    color: #1ABC9C;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+/*   لتصميم متجاوب */
+@media (max-width: 1024px) {
+    .section-1 div {
+        width: 48%;
+    }
+
+    .section-2s .texts {
+        font-size: 1.5rem;
+    }
+
+    .section-1 div h3 {
+        font-size: 18px;
+    }
+
+    .section-1 div p {
+        font-size: 0.9rem;
+    }
+
+    .section-2s {
+        padding: 40px 20px;
+    }
+
+    .section-3 h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-3 .social-icons i {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-2s .texts {
+        font-size: 1.3rem;
+    }
+
+    .section-2s {
+        padding: 30px 15px;
+    }
+
+    .section-1 div h3 {
+        font-size: 16px;
+    }
+
+    .section-1 div p {
+        font-size: 0.9rem;
+    }
+
+    .section-3 h2 {
+        font-size: 1.3rem;
+    }
+
+    .section-3 .social-icons i {
+        font-size: 20px;
+    }
+}
+
